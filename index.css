@@ -97,7 +97,7 @@ input[value='cards']:checked ~ main .cat > :not(header)
 .name:hover,
 a:hover
 {
-    color:green;
+    color: green;
 }
 
 a
