@@ -6,10 +6,12 @@ input[value='list']:checked ~ label[for='list-view']
 {
     display: none;
 }
+
 main
 {
     text-align: center;
 }
+
 .cat
 {
     overflow: hidden;
@@ -17,6 +19,7 @@ main
     border-style: inset;
     border-color: grey;
 }
+
 input[value='cards']:checked ~ main .cat
 {
     display: inline-block;
@@ -24,6 +27,7 @@ input[value='cards']:checked ~ main .cat
     height: 350px;
     border-width: 1px;
 }
+
 input[value='list']:checked ~ main .cat
 {
     width: 50%;
@@ -32,28 +36,34 @@ input[value='list']:checked ~ main .cat
     padding: 25px;
     border-width: 1px 1px 0;
 }
+
 input[value='cards']:checked ~ main .cat:hover
 {
     box-shadow: 0 0 3px black;
 }
+
 .cat header
 {
     width: 100%;
     overflow: hidden;
 }
+
 input[value='cards']:checked ~ main .cat header
 {
     height: 160px;
 }
+
 input[value='cards']:checked ~ main .cat > :not(header)
 {
     padding-left: 10px;
     padding-right: 10px;
 }
+
 .cat header img
 {
     width: 100%;
 }
+
 .name
 {
     margin-top: 0;
@@ -66,25 +76,30 @@ input[value='cards']:checked ~ main .cat > :not(header)
     text-overflow: ellipsis;
     padding-top: 20px;
 }
+
 .short-info,
 .long-info
 {
     font-size: 15px;
 }
+
 .short-info p:not(:last-of-type)
 {
     margin: auto;
 }
+
 .long-info
 {
     text-align: justify;
     hyphens: auto;
 }
+
 .name:hover,
 a:hover
 {
     color:green;
 }
+
 a
 {
     color: yellowgreen;
